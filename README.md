@@ -1,6 +1,8 @@
 # ProjectMarvel
+
 A search engine for wikipedia and marvel.
 
+User Story: As a marvel fan, I want to learn more about the characters, so that I understand the comics/films better.
 
 Use a CSS framework other than Bootstrap.
 
