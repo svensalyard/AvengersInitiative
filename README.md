@@ -1,6 +1,6 @@
 # ProjectMarvel
 ## About
-A search engine for wikipedia and marvel fans.
+A search engine for marvel fans.
 ## User Story
 User Story: As a marvel fan, I want to learn more about the characters, so that I understand the comics/films better.
 ## APIS
