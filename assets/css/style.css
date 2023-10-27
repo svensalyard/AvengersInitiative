@@ -1,0 +1,27 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex-grow: 1;
+}
+
+.search-button {
+    margin-left: 10px;
+}
+.small {
+    width: 40px;
+    height: 40px;
+}
+form {
+    padding-top: 10px; 
+    padding-right: 10px;
+}
+
+.pad {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
