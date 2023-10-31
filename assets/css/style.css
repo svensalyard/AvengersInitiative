@@ -1,3 +1,7 @@
+
+
+/*-----------*/
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -9,6 +13,7 @@
 
 .search-button {
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 .small {
     width: 40px;
@@ -24,4 +29,18 @@ form {
     margin-left: 10px;
     height: 40px;
     width: 40px;
+}
+
+/*-----------*/
+
+.custom-1 {
+    padding: 5px;
+}
+
+.starry {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/back.png");
+    background-size: cover;
+    background-position: var(--aligncenter);
 }
