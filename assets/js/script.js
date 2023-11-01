@@ -9,4 +9,3 @@ fetch(`https://gateway.marvel.com/v1/public/characters?name=${charName}&ts=${tim
 .then(function(response) {
   console.log(response)
 })
-characters?name=Hulk
