@@ -18,14 +18,14 @@
         <div class="nav-wrapper red">
             <a href="#" class="brand-logo center">Avengers Initiative</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><img src="/assets/images/ironman.png" alt="ironman" class="small pad"></li>
+                <li><img src="./assets/images/ironman.png" alt="ironman" class="small pad"></li>
                 <li><a href="badges.html">List of Characters and Movies</a></li>
                 <li><a href="collapsible.html">Additional Info</a></li>
             </ul>
             <form>
                 <div class="right input-field search-bar">
                     <input id="search" type="search" required class="search-input" class="pad">
-                    <label class="label-icon" for="search"><i class="material-icons"><img class="small" src="/assets/images/glass2.png" alt="pixel iron man helmet"></i></label>
+                    <label class="label-icon" for="search"><i class="material-icons"><img class="small" src="./assets/images/glass2.png" alt="pixel iron man helmet"></i></label>
                     <button class="btn waves-effect waves-light search-button" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                     </button>
@@ -48,11 +48,11 @@
         <div class="row">
             <div class="col s6">
                 <div class="card large orange">
-                    <div class="card-image">
+                    <div id="thumbnail" class="card-image">
                       <img src="./assets/images/back.png">
                     </div>
                     <div class="card-content">
-                        <h3>Name</h3>
+                        <h3 id="content-title">Name</h3>
                     </div>
                     <div class="card-action">
                       <a href="#"></a>
@@ -63,7 +63,9 @@
                                 <div class="card large purple">
                                     <div class="card-content">
                                         <h3>Character Information</h3>
-                                        <p>&Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, maiores. Quos blanditiis corrupti obcaecati nobis inventore odit quo, perspiciatis numquam laboriosam, ex ullam enim? Nemo quia dolores quibusdam natus quis.</p>
+                                        <div id="short-summary">
+                                          <p>&Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, maiores. Quos blanditiis corrupti obcaecati nobis inventore odit quo, perspiciatis numquam laboriosam, ex ullam enim? Nemo quia dolores quibusdam natus quis.</p>
+                                        </div>
                                     </div>
                                 </div>
             </div>
