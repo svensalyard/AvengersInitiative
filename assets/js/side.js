@@ -46,6 +46,7 @@ function getAndAddThumbnail(title, id, imgSize) // page title, page id, image si
       {
         console.log("thumbnail image not found, returning null")
         console.log(e)
+        contentImage = null
         return null
       }
     );
