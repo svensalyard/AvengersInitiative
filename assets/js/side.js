@@ -61,7 +61,7 @@ fetch(`https://en.wikipedia.org/w/api.php?&origin=*&action=query&format=json&lis
     .then(function(response){return response.json()})
     .then(function(response) {
       // get title(formatted exactly as its needed) from last fetch and make a new query for the page data(pages html)
-      fetch(`http://en.wikipedia.org/w/api.php?&origin=*&action=parse&prop=text&page=${response.query.search[0].title}&format=json`)
+      fetch(`https://en.wikipedia.org/w/api.php?&origin=*&action=parse&prop=text&page=${response.query.search[0].title}&format=json`)
         .then(function(response){return response.json()})
         .then(function(response) {
           console.log(response)
