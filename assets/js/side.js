@@ -15,8 +15,13 @@ fetch(`https://gateway.marvel.com/v1/public/characters?name=${charName}&ts=${tim
 
 var summaryTextElm = $("#short-summary")
 var thumbnailElm = $("#thumbnail")
-var contentTitle = $("#content-title")
+var contentTitleElm = $("#content-title")
 var searchTerm = "Jaguar"
+
+// variables for saving content to local storage
+var contentTitle
+var contentDescription
+var contentImage
 
 // parse page info returned from fetch to pull thumbnail image (if page has thumbnail image) if no image is found return null
 function getAndAddThumbnail(title, id, imgSize) // page title, page id, image size
@@ -33,6 +38,7 @@ function getAndAddThumbnail(title, id, imgSize) // page title, page id, image si
           console.log("adding image")
           thumbnailElm.empty()
           thumbnailElm.prepend(`<img id="${pageTitle}" src="${resp}" />`)
+          contentImage = `<img id="${pageTitle}" src="${resp}" />`
         }
       }
     )
@@ -52,7 +58,7 @@ function getShortSummary(response)
   respSplit.splice(0,2)
   var shortSummary = respSplit[0].split("</p>", 1)
   var shortSummary = "<p>\n" + shortSummary + "</p>"
-  console.log(shortSummary)
+  // console.log(shortSummary)
   var arr = shortSummary.split("<a")
   var arr2 = []
   for(i = 0; i < arr.length; i++)
@@ -71,9 +77,10 @@ function getShortSummary(response)
     // console.log(temp)
     shortSummary = shortSummary + temp[0] + temp[1]
   }
-  console.log(shortSummary)
+  // console.log(shortSummary)
   // console.log(arr)
   // console.log(arr2)
+  contentDescription = shortSummary
   return shortSummary
 }
 
@@ -89,7 +96,8 @@ fetch(`https://en.wikipedia.org/w/api.php?&origin=*&action=query&format=json&lis
           console.log(response)
           pageID = response.parse.pageid
           pageTitle = response.parse.title
-          contentTitle.text(pageTitle)
+          contentTitle = pageTitle
+          contentTitleElm.text(pageTitle)
           console.log(pageID)
           getAndAddThumbnail(pageTitle, pageID, 1000) // explained where function is defined
           shortSummary = getShortSummary(response) // explained where function is defined
