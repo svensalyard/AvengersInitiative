@@ -52,6 +52,28 @@ function getShortSummary(response)
   respSplit.splice(0,2)
   var shortSummary = respSplit[0].split("</p>", 1)
   var shortSummary = "<p>\n" + shortSummary + "</p>"
+  console.log(shortSummary)
+  var arr = shortSummary.split("<a")
+  var arr2 = []
+  for(i = 0; i < arr.length; i++)
+  {
+    temp = arr[i].split('">')
+    // console.log(temp)
+    if(temp[1] != undefined)
+      arr2.push(temp[1])
+    else
+    arr2.push(temp[0])
+  }
+  shortSummary = ""
+  for(i = 0; i < arr2.length; i++)
+  {
+    temp = arr2[i].split("</a>")
+    // console.log(temp)
+    shortSummary = shortSummary + temp[0] + temp[1]
+  }
+  console.log(shortSummary)
+  // console.log(arr)
+  // console.log(arr2)
   return shortSummary
 }
 
