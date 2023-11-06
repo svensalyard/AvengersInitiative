@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (M && typeof M.updateTextFields === 'function') {
       M.updateTextFields();
   }
-  
+
   let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
   const marvelButton = document.querySelector(".search-marvel");
