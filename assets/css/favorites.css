@@ -42,21 +42,3 @@ form {
     background-size: cover;
     background-position: var(--aligncenter);
 }
-
-/*-------------------------*/
-
-.padd {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.hide {
-    display: none;
-}
-
-.or {
-    display: block;
-    align-items: center;
-    align-content: center;
-    flex-grow: 1;
-}
