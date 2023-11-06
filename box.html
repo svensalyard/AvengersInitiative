@@ -9,20 +9,22 @@
 </head>
 
 <body>
-  
+
   <nav>
     <div class="nav-wrapper red">
       <a href="#" class="brand-logo center">Avengers Initiative</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><img src="./assets/images/ironman.png" alt="ironman" class="small pad"></li>
-          <li><a href="badges.html">List of Characters and Movies</a></li>
-          <li><a href="collapsible.html">Additional Info</a></li>
+          <li><a href="./favorites.html">History</a></li>
         </ul>
-      <form>
-        <div class="right input-field search-bar">
+        <form action="#">
+                <div class="right input-field search-bar">
           <input id="search" type="search" required class="search-input" class="pad">
             <label class="label-icon" for="search"><i class="material-icons"><img class="small" src="./assets/images/glass2.png" alt="pixel iron man helmet"></i></label>
-            <button class="btn waves-effect waves-light search-button" type="submit" name="action">Submit
+            <button class="btn waves-effect waves-light search-button search-wikipedia" type="submit" name="action">Wikipedia
+              <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light search-button search-marvel" type="submit" name="action">Marvel
               <i class="material-icons right">send</i>
             </button>
         </div>
@@ -41,12 +43,12 @@
 
   <div class="row">
     <div class="col s6">
-      <div class="card large orange">
-        <div id="thumbnail" class="card-image">
-          <img src="./assets/images/back.png">
-        </div>
+      <div class="card orange">
         <div class="card-content">
           <h3 id="content-title">Name</h3>
+        </div>
+        <div id="thumbnail" class="card-image  padd">
+          <img src="./assets/images/back.png">
         </div>
         <div class="card-action">
           <a href="#"></a>
@@ -77,8 +79,7 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">List of Characters and Movies</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Additional Info</a></li>
+            <li><a class="grey-text text-lighten-3" href="./favorites.html">History</a></li>
           </ul>
         </div>
       </div>
