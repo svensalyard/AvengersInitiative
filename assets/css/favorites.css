@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url(../images/3556301.png);
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 /*-----------*/
 
 .search-bar {
