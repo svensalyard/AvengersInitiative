@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log('hash -  normal words: ' + hashKey)
 
-  fetch(`http://gateway.marvel.com/v1/public/comics?ts=${hashDate}&apikey=${pubKey}&hash=${hashKey}`)
+  fetch(`https://gateway.marvel.com/v1/public/comics?ts=${hashDate}&apikey=${pubKey}&hash=${hashKey}`)
   .then(function(response){return response.json()})
   .then(function(response) {
     console.log(response)
