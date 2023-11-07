@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var contentTitle
   var contentDescription
   var contentImage
+  
+
 
   // parse page info returned from fetch to pull thumbnail image (if page has thumbnail image) if no image is found return null
   function getAndAddThumbnail(title, id, imgSize) // page title, page id, image size
@@ -130,8 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var searchInput = document.getElementById('search');
   var charCard = document.querySelector('.card.darken-2');
   var infoCard = document.querySelector('.card.darken-4');
-
-  var thumbnailElm = $("#thumbnail")
+  let thumbnailElm = $("#thumbnail");
 
   // Event Listener for Form Submission
 marvelButton.addEventListener('click', async function (e) {
@@ -144,6 +145,7 @@ marvelButton.addEventListener('click', async function (e) {
       try {
           // Fetches data from Marvel API
           var response = await fetch(url);
+
           var data = await response.json();
           var character = data.data.results[0];
           var charImage = `${character.thumbnail.path}.${character.thumbnail.extension}`;

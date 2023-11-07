@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Uses materialize for css framework-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/side.css">
     <title>Avengers Initiative</title>
@@ -16,6 +17,7 @@
             <li><img src="./assets/images/ironman.png" alt="ironman" class="small pad"></li>
             <li><a href="./favorites.html">History</a></li>
           </ul>
+          <!--It is interactive from the search bar and buttons for marvel or wikipedia apis (2 apis).-->
           <form action="#">
           <div class="right input-field search-bar">
             <input id="search" type="search" required class="search-input" class="pad">
@@ -31,15 +33,19 @@
       </div>
     </nav>
 
+    <!--The marvel and wikipedia apis display their content in this section-->
     <main>
       <div class="row">
       </div>
       <div class="row">
+        <!--Splits columns depending on screen size for responsiveness.-->
         <div class="col s12 m12c l6">
           <div class="card deep-purple darken-2">
             <div class="card-content">
+              <!--Character title displays here-->
               <h3 id="content-title">Welcome!</h3>
             </div>
+            <!--Image displays here-->
             <div id="thumbnail" class="card-image  padd">
               <img src="./assets/images/back.png">
             </div>
@@ -50,9 +56,14 @@
           <div class="card-content">
             <h3>Description</h3>
               <div id="short-summary">
+                  <!--Character description displays here-->
                   <p>Avengers Initiative is a simple webpage for Marvel characters or further information. 
                     You can type a characters name in the search box and press marvel to recieve marvels official
                     description from their api. Also, you can type anything and click wikipedia for a basic wiki search.
+                    Typing a search in the top right box and clicking Wikipedia or Marvel buttons will pull information from
+                    the respective API. It will propagate the page with the heroes name, image, and description. You have to be careful to type it with correct
+                    spacing/punctuation as the apis are very particular. The wikipedia API also has some things named inccorectly, so you may get wrong results.
+                    Not all wikipedia searches will pull an image.
                   </p>
               </div>
             </div>
@@ -83,6 +94,7 @@
       </div>
     </footer>
 
+  <!--Uses materialize for css framework and jquery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <script src="./assets/js/side.js"></script>
