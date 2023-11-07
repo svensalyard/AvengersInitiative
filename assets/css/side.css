@@ -2,7 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: gray;
+    background-image: url(/assets/images/3556301.png);
   }
 
   main {
