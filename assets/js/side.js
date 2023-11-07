@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
   var searchInput = document.getElementById('search');
   var summaryTextElm = $("#short-summary")
-  var thumbnailElm = $("#thumbnail")
+
   var contentTitleElm = $("#content-title")
   var searchTerm = searchInput.value
     searchHistory.push(searchTerm)
@@ -128,8 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Elements
   var searchForm = document.querySelector('form');
   var searchInput = document.getElementById('search');
-  var charCard = document.querySelector('.card.blue');
-  var infoCard = document.querySelector('.card.deep-purple');
+  var charCard = document.querySelector('.card.darken-2');
+  var infoCard = document.querySelector('.card.darken-4');
+
+  var thumbnailElm = $("#thumbnail")
 
   // Event Listener for Form Submission
 marvelButton.addEventListener('click', async function (e) {
