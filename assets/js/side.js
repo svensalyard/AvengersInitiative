@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Elements
   var searchForm = document.querySelector('form');
   var searchInput = document.getElementById('search');
-  var charCard = document.querySelector('.card.orange');
-  var infoCard = document.querySelector('.card.purple');
+  var charCard = document.querySelector('.card.blue');
+  var infoCard = document.querySelector('.card.deep-purple');
 
   // Event Listener for Form Submission
 marvelButton.addEventListener('click', async function (e) {
